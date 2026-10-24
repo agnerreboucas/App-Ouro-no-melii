@@ -1,0 +1,9 @@
+{
+  "name": " Dica Binho Encontre ",
+  "description": "Encontre Ouro no Mercado Livre e Saiba seu Lucro Real. Mostramos a margem de lucro real por produto para você vender sem prejuízo. Descubra quanto entra no seu bolso e quanto sua empresa lucra.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ],
+  "majorCapabilities": []
+}

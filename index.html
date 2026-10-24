@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="pt-br" class="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encontre Ouro no Meli - Calculadora de Lucro</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries,typography"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css">
+    <script>
+      tailwind.config = {
+          darkMode: "class",
+          theme: {
+              extend: {
+                  colors: {
+                      // Paleta nota de 100 Reais
+                      "primary": "#0096cc", // Turquesa da nota (10% - Ação)
+                      "secondary": "#1a3d5b", // Azul Profundo da tinta (30% - Estrutura)
+                      "background-light": "#e9f2f9", // Azul claríssimo do papel (60% - Base)
+                      "background-dark": "#0a141a",
+                      "card-light": "#ffffff",
+                      "card-dark": "#162a3a",
+                      "text-light-primary": "#1a3d5b",
+                      "text-dark-primary": "#ffffff",
+                      "text-light-secondary": "#4a6b8a",
+                      "text-dark-secondary": "#a8c5da",
+                      "border-light": "#cfe2f0",
+                      "border-dark": "#2a4d6e",
+                      "note-gold": "#d45113", // Laranja/Ouro do serial
+                      "ml-yellow": "#FFE600",
+                  },
+                  fontFamily: {
+                      "display": ["Manrope", "sans-serif"]
+                  },
+                  borderRadius: {"DEFAULT": "0.5rem", "lg": "0.75rem", "xl": "1rem"},
+              },
+          },
+      }
+    </script>
+    <style>
+      body { 
+        font-family: 'Manrope', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        color: #1a3d5b;
+      }
+      .dark body {
+        color: #ffffff;
+      }
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "@google/genai": "https://esm.sh/@google/genai@^1.38.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "jspdf": "https://esm.sh/jspdf@^2.5.1",
+    "jspdf-autotable": "https://esm.sh/jspdf-autotable@^3.8.2",
+    "@supabase/supabase-js": "https://esm.sh/@supabase/supabase-js@^2.45.4",
+    "xlsx": "https://esm.sh/xlsx@0.18.5",
+    "pptxgenjs": "https://esm.sh/pptxgenjs@3.12.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-background-light dark:bg-background-dark text-text-light-primary dark:text-text-dark-primary">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
